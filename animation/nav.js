@@ -19,7 +19,6 @@ closeMenu.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
 if (window.scrollY > 15) {
-    // Ketika discroll → tampilkan navbar kecil & rounded
     navbar.classList.add(
     "top-1",
     "left-1/2",
@@ -36,7 +35,6 @@ if (window.scrollY > 15) {
     lgMenu.classList.remove("text-gray-100");
     lgMenu.classList.add("text-gray-700");
 } else {
-    // Saat di posisi paling atas → lebar penuh, tanpa rounded
     navbar.classList.remove(
         "top-1",
         "left-1/2",
@@ -97,9 +95,9 @@ window.addEventListener("load", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const counter = document.getElementById("counter");
   let count = 0;
-  const target = 700; // nilai akhir
-  const speed = 10; // semakin kecil semakin cepat
-  let started = false; // agar animasi hanya jalan sekali
+  const target = 700; 
+  const speed = 7; 
+  let started = false; 
   const updateCount = () => {
     if (count < target) {
       count += Math.ceil(target / 100);
@@ -109,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
       counter.textContent = target.toLocaleString() + '+';
     }
   };
-  // Buat observer untuk mendeteksi saat elemen terlihat di layar
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -120,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     { threshold: 0.5 }
-  ); // akan aktif saat 50% elemen terlihat
+  );
   observer.observe(counter);
   });
 
