@@ -80,15 +80,22 @@ const observer = new IntersectionObserver(
 reveals.forEach((el) => observer.observe(el));
 
 
-window.addEventListener("load", () => {
+ document.body.classList.add("no-scroll");
+
+  // Saat halaman selesai dimuat → loading hilang + scroll aktif lagi
+  window.addEventListener("load", function () {
     const loadingScreen = document.getElementById("loading-screen");
-    // Fade out dulu
-    loadingScreen.classList.add("opacity-0");
-    // Setelah animasi selesai (0.7s), hapus dari tampilan
+    
+    // Animasi fade-out
+    loadingScreen.style.opacity = "0";
+
     setTimeout(() => {
       loadingScreen.style.display = "none";
-    }, 300);
-  });
+
+      // Aktifkan scroll kembali
+      document.body.classList.remove("no-scroll");
+    }, 700); // durasi sesuai transition
+  });
 
 
 //ojk counter
