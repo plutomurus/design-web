@@ -101,9 +101,52 @@ reveals.forEach((el) => observer.observe(el));
 
 
 window.addEventListener("load", () => {
-  const loader = document.getElementById("loadingScreen");
-  loader.classList.add("opacity-0"); // efek fade out
-  setTimeout(() => {
-    loader.style.display = "none"; // sembunyikan sepenuhnya
-  }, 700); // durasi fade-out sesuai dengan transition di Tailwind
+    const loadingScreen = document.getElementById("loading-screen");
+    // Fade out dulu
+    loadingScreen.classList.add("opacity-0");
+    // Setelah animasi selesai (0.7s), hapus dari tampilan
+    setTimeout(() => {
+      loadingScreen.style.display = "none";
+    }, 300);
+  });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const counter = document.getElementById("counter");
+  let count = 0;
+  const target = 1000; // nilai akhir
+  const speed = 10; // semakin kecil semakin cepat
+  let started = false; // agar animasi hanya jalan sekali
+
+  const updateCount = () => {
+    if (count < target) {
+      count += Math.ceil(target / 100);
+      counter.textContent = count.toLocaleString();
+      setTimeout(updateCount, speed);
+    } else {
+      counter.textContent = target.toLocaleString();
+    }
+  };
+
+  // Buat observer untuk mendeteksi saat elemen terlihat di layar
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        updateCount();
+      }
+    });
+  }, { threshold: 0.5 }); // akan aktif saat 50% elemen terlihat
+
+  observer.observe(counter);
+
+  // Script accordion tetap kamu
+  document.querySelectorAll(".accordion-item").forEach((item) => {
+    item.addEventListener("toggle", () => {
+      if (item.open) {
+        document.querySelectorAll(".accordion-item").forEach((other) => {
+          if (other !== item) other.removeAttribute("open");
+        });
+      }
+    });
+  });
 });

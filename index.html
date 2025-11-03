@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
+<div id="loading-screen" class="fixed inset-0 bg-white flex items-center justify-center z-[9999] transition-opacity duration-700">
+  <div class="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+</div>
+
 <body style="background-color: #fbfbfb;">
 <!-- Loading Screen -->
-<div id="loadingScreen" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-700">
-  <div class="flex flex-col items-center space-y-4">
-    <!-- Logo atau spinner -->
-    <img src="assets/logo.png" alt="Logo" class="w-16 h-16 animate-bounce">
-    <p class="text-blue-600 font-semibold text-lg animate-pulse">Memuat halaman...</p>
-  </div>
-</div>
 
 <header id="navbar" class="fixed transition-transform duration-500 top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4 py-6 flex items-center justify-between">
 
@@ -30,10 +27,6 @@
     <a href="index.html" class="relative overflow-hidden h-6 group">
       <span class="font-semibold block group-hover:-translate-y-full transition-transform duration-300">Home</span>
       <span class="font-semibold block absolute top-full left-0 group-hover:translate-y-[-105%] transition-transform duration-300">Home</span>
-    </a>
-    <a href="#" class="relative overflow-hidden h-6 group">
-      <span class="font-semibold block group-hover:-translate-y-full transition-transform duration-300">About us</span>
-      <span class="font-semibold block absolute top-full left-0 group-hover:translate-y-[-105%] transition-transform duration-300">About us</span>
     </a>
     <a href="/course.html" class="relative overflow-hidden h-6 group">
       <span class="font-semibold block group-hover:-translate-y-full transition-transform duration-300">Course</span>
@@ -69,7 +62,6 @@
 
   <!-- Mobile links -->
   <a href="index.html" class="text-lg font-semibold">Home</a>
-  <a href="#" class="text-lg font-semibold">About us</a>
   <a href="/course.html" class="text-lg font-semibold">Course</a>
   <a href="contact.html" class="text-lg font-semibold">Contact</a>
 </nav>
@@ -254,7 +246,6 @@
       </h2>
       <ul class="space-y-2">
         <li><a href="/index.html" class="hover:text-blue-400 transition">Home</a></li>
-        <li><a href="/index.html" class="hover:text-blue-400 transition">About us</a></li>
         <li><a href="/course.html" class="hover:text-blue-400 transition">Course</a></li>
         <li><a href="/contact.html" class="hover:text-blue-400 transition">Contact</a></li>
       </ul>
@@ -276,13 +267,6 @@
       <h3 class="text-xl font-semibold text-gray-100 mb-4">BentengDigital HQ</h3>
       <p class="text-sm mb-2">Phone: <span class="text-blue-400 font-medium">+62 811 999 888</span></p>
       <p class="text-sm mb-6">Alamat: Jl. Teknologi No.21<br>Kendari, Indonesia 10101</p>
-
-      <div class="flex space-x-4 text-lg">
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
-      </div>
     </div>
 
   </div>
@@ -290,8 +274,6 @@
   <!-- Garis bawah -->
   <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
     © 2025 <span class="text-blue-400 font-semibold">BentengDigital</span> — Mengedukasi & Melindungi Dunia Digital
-    <span class="mx-2">|</span>
-    <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
   </div>
 </footer>
 
