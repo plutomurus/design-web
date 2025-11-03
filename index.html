@@ -15,7 +15,7 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 <!-- Logo -->
 <a href="#" class="flex items-center gap-2 ml-3">
   <img src="assets/logo.png" class="w-10 md:w-12 h-auto opacity-80" alt="Logo">
-  <span class="font-bold text-sm text-blue-500 sm:text-2xl">PoliceTube</span>
+  <span class="font-bold text-sm text-blue-500 sm:text-2xl">SafeSpace.ID</span>
 </a>
 
   <!-- Desktop menu -->
@@ -97,33 +97,35 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 
 <!-- About Us -->
   
-<section class="bg-gray-100 lg:px-20 mx-auto lg:h-[70vh] py-12 flex flex-col-reverse lg:flex-row items-center justify-center gap-6">
+<section class="bg-gray-100 lg:px-20 lg:py-16 py-12 flex items-center justify-center gap-6">
   <!-- Teks -->
-  <div class="flex w-full justify-center lg:basis-1/2">
-    <div class="text-left lg:text-justify p-6">
-      <h1 class="text-3xl md:text-4xl font-semibold mb-4 leading-tight">
-        <span class="text-blue-600 font-bold text-4xl">Benteng Digital</span>
-      </h1>
-      <p class="text-gray-600 mb-6">
-        adalah platform edukasi keamanan siber yang membantu masyarakat untuk memahami dan menghadapi ancaman digital.
-        Kami hadir untuk membangun generasi digital yang aman, cerdas, dan tangguh di dunia maya.
-      </p>
-      <a href="#" class="bg-blue-900 text-white px-10 py-2 rounded-full hover:bg-blue-800 font-semibold">Mulai</a>
+  <div class="container lg:mx-auto flex lg:flex-row flex-col-reverse items-center">
+    <div class="flex w-full justify-center lg:basis-1/2">
+      <div class="text-left lg:text-justify p-6">
+        <h1 class="text-3xl md:text-4xl font-semibold mb-4 leading-tight">
+          <span class="text-blue-600 font-bold text-4xl">Benteng Digital</span>
+          </h1>
+          <p class="text-gray-600 mb-6">
+            adalah platform edukasi keamanan siber yang membantu masyarakat untuk memahami dan menghadapi ancaman digital.
+            Kami hadir untuk membangun generasi digital yang aman, cerdas, dan tangguh di dunia maya.
+          </p>
+          <a href="#" class="bg-blue-900 text-white px-10 py-2 rounded-full hover:bg-blue-800 font-semibold">Mulai</a>
+        </div>
+      </div>
+      
+      <!-- Gambar -->
+      <div class="w-full lg:basis-1/2 flex justify-center">
+        <img 
+        src="assets/asset2.png"
+        alt="Data protection illustration"
+        class="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] h-auto transition-all duration-300 hover:scale-105"
+        />
+      </div>
     </div>
-  </div>
-
-  <!-- Gambar -->
-  <div class="w-full lg:basis-1/2 flex justify-center">
-    <img 
-      src="assets/asset2.png"
-      alt="Data protection illustration"
-      class="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[400px] lg:max-w-[500px] h-auto transition-all duration-300 hover:scale-105"
-    />
-  </div>
 </section>
 
 <!-- Visi -->
-<section class=" container lg:mx-auto lg:px-20 mx-auto lg:h-[65vh] py-12 flex flex-col lg:flex-row items-center justify-center gap-6">
+<section class=" container lg:mx-auto lg:px-20 mx-auto py-12 flex flex-col lg:flex-row items-center justify-center gap-6">
   <!-- Gambar -->
   <div class="w-full lg:basis-1/2 flex justify-center">
     <img 
@@ -132,7 +134,6 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
       class="w-full max-w-[250px] sm:max-w-[200px] md:max-w-[300px] lg:max-w-[400px] h-auto transition-all duration-300 hover:scale-105"
     />
   </div>
-  
   <!-- Teks -->
   <div class="flex w-full justify-center lg:basis-1/2">
     <div class="text-left lg:text-justify p-6">
@@ -148,77 +149,79 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 </section>
 
 <!-- Accordion -->
-<section class="bg-gray-100 flex flex-col lg:flex-row justify-between mx-auto py-10 gap-10 px-6 lg:px-20">
-  <!-- Bagian Kiri (Accordion) -->
-  <div class="space-y-4 lg:w-2/3">
-    <p class="text-center lg:text-left text-gray-700">Berikut adalah beberapa hal dasar mengenai keamanan digital.</p>
+<section class="bg-gray-100 py-10 gap-10 px-6 lg:px-20">
+  <div class="container flex flex-col lg:flex-row justify-between mx-auto">
+    <!-- Bagian Kiri (Accordion) -->
+    <div class="space-y-4 lg:w-2/3">
+      <p class="text-center lg:text-left text-gray-700">Berikut adalah beberapa hal dasar mengenai keamanan digital.</p>
 
-    <details class="accordion-item group rounded-xl p-4  transition">
-      <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
-        Apa itu Keamanan Digital?
-      </summary>
-      <div class="mt-2  text-gray-600 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-        Konsep dasar privasi, keamanan data, dan etika digital.
-      </div>
-    </details>
+      <details class="accordion-item group rounded-xl p-4  transition">
+        <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
+          Apa itu Keamanan Digital?
+        </summary>
+        <div class="mt-2  text-gray-600 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
+          Konsep dasar privasi, keamanan data, dan etika digital.
+        </div>
+      </details>
 
-    <details class="accordion-item group rounded-xl p-4 transition">
-      <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
-        Keamanan Akun & Password
-      </summary>
-      <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-        <p>Tips membuat kata sandi kuat.</p>
-        <p>Pentingnya 2FA (Two-Factor Authentication).</p>
-      </div>
-    </details>
+      <details class="accordion-item group rounded-xl p-4 transition">
+        <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
+          Keamanan Akun & Password
+        </summary>
+        <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
+          <p>Tips membuat kata sandi kuat.</p>
+          <p>Pentingnya 2FA (Two-Factor Authentication).</p>
+        </div>
+      </details>
 
-    <details class="accordion-item group rounded-xl p-4  transition">
-      <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
-        Phishing & Penipuan Online
-      </summary>
-      <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-        <p>Contoh-contoh email/website palsu.</p>
-        <p>Cara mengenalinya.</p>
-      </div>
-    </details>
+      <details class="accordion-item group rounded-xl p-4  transition">
+        <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
+          Phishing & Penipuan Online
+        </summary>
+        <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
+          <p>Contoh-contoh email/website palsu.</p>
+          <p>Cara mengenalinya.</p>
+        </div>
+      </details>
 
-    <details class="accordion-item group rounded-xl p-4  transition">
-      <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
-        Privasi di Media Sosial
-      </summary>
-      <div class="mt-2 text-gray-600 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-        Pengaturan privasi di Instagram, TikTok, dan Facebook.
-      </div>
-    </details>
+      <details class="accordion-item group rounded-xl p-4  transition">
+        <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
+          Privasi di Media Sosial
+        </summary>
+        <div class="mt-2 text-gray-600 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
+          Pengaturan privasi di Instagram, TikTok, dan Facebook.
+        </div>
+      </details>
 
-    <details class="accordion-item group rounded-xl p-4 transition">
-      <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
-        Jejak Digital & Dampaknya
-      </summary>
-      <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-        <p>Apa itu digital footprint.</p>
-        <p>Bagaimana menjaga reputasi online.</p>
-      </div>
-    </details>
+      <details class="accordion-item group rounded-xl p-4 transition">
+        <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
+          Jejak Digital & Dampaknya
+        </summary>
+        <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
+          <p>Apa itu digital footprint.</p>
+          <p>Bagaimana menjaga reputasi online.</p>
+        </div>
+      </details>
 
-    <details class="accordion-item group rounded-xl p-4 transition">
-      <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
-        Etika dan Keamanan Berinternet untuk Anak & Remaja
-      </summary>
-      <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-        <p>Cyberbullying, konten negatif, dan perlindungan diri.</p>
-      </div>
-    </details>
-  </div>
+      <details class="accordion-item group rounded-xl p-4 transition">
+        <summary class="cursor-pointer font-semibold text-lg text-blue-600 group-open:text-blue-800 hover:text-blue-500 transition">
+          Etika dan Keamanan Berinternet untuk Anak & Remaja
+        </summary>
+        <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
+          <p>Cyberbullying, konten negatif, dan perlindungan diri.</p>
+        </div>
+      </details>
+    </div>
 
-  <!-- Bagian Kanan (Statistik Kasus Penipuan) -->
-  <div class="flex flex-col bg-red-500 items-center justify-center bg-white rounded-2xl shadow-lg p-8 lg:w-1/3 text-center relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent pointer-events-none"></div>
-    <h2 class="text-3xl font-bold text-blue-700 mb-2">Data OJK</h2>
-    <p class="text-gray-600 mb-4">Rata-rata kasus penipuan online setiap hari di Indonesia</p>
-    <h3 id="counter" class="text-6xl font-extrabold text-blue-600">0</h3>
-    <p class="mt-2 text-gray-700 font-semibold">Kasus per hari</p>
-    <p class="text-sm text-gray-500 mt-4">Sumber: Otoritas Jasa Keuangan (OJK)</p>
+    <!-- Bagian Kanan (Statistik Kasus Penipuan) -->
+    <div class="flex flex-col bg-red-500 items-center justify-center bg-white rounded-2xl shadow-lg p-8 lg:w-1/3 text-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent pointer-events-none"></div>
+      <h2 class="text-3xl font-bold text-blue-700 mb-2">Data OJK</h2>
+      <p class="text-gray-600 mb-4">Rata-rata kasus penipuan online setiap hari di Indonesia</p>
+      <h3 id="counter" class="text-6xl font-extrabold text-blue-600">0</h3>
+      <p class="mt-2 text-gray-700 font-semibold">Kasus per hari</p>
+      <p class="text-sm text-gray-500 mt-4">Sumber: Otoritas Jasa Keuangan (OJK)</p>
+    </div>
   </div>
 </section>
 
@@ -320,7 +323,64 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 </section>
 
 
-<div style="height: 100vh;"></div>
+<div class="h-[30vh]"></div>
+
+<!-- Footer -->
+<footer class="bg-[#0b1120] text-gray-300 pt-16 pb-10">
+  <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- Kolom 1: Logo & Menu -->
+    <div>
+      <h2 class="text-2xl font-bold text-gray-100 mb-6">
+        SafeSpace<span class="text-blue-500">.ID</span>
+      </h2>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-blue-400 transition">Phishing Simulations</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Awareness Training</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Cyber Toolkit</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Portal Login</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 2: Recent Blogs -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-100 mb-4">Recent Blogs</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-blue-400 transition">Kasus Kebocoran Data Terbaru di Indonesia</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Tren Serangan Siber 2025</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Tips Melindungi Akun dari Phishing</a></li>
+        <li><a href="#" class="hover:text-blue-400 transition">Kominfo Umumkan Program Edukasi Keamanan Digital</a></li>
+      </ul>
+    </div>
+
+    <!-- Kolom 3: Kontak -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-100 mb-4">SafeSpace.ID HQ</h3>
+      <p class="text-sm mb-2">Phone: <span class="text-blue-400 font-medium">+62 811 999 888</span></p>
+      <p class="text-sm mb-6">Alamat: Jl. Teknologi No.21<br>Jakarta, Indonesia 10210</p>
+
+      <div class="flex space-x-4 text-lg">
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Garis bawah -->
+  <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+    © 2025 <span class="text-blue-400 font-semibold">SafeSpace.ID</span> — Mengedukasi & Melindungi Dunia Digital
+    <span class="mx-2">|</span>
+    <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
+  </div>
+</footer>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
   <!-- Navbar Animation -->
   <script src="animation/nav.js"></script>
