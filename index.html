@@ -9,17 +9,15 @@
 </head>
 <body style="background-color: #fbfbfb;">
 
-<header id="navbar"
-class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4 py-6 flex items-center justify-between">
+<header id="navbar" class="fixed transition-transform duration-500 top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4 py-6 flex items-center justify-between">
 
   <!-- Logo -->
-  <a href="#" class="flex items-center gap-2 ml-3">
+  <a href="#" class="flex items-center gap-2 ml-3 transition-transform-y duration-300">
     <img src="assets/logo.png" class="w-10 md:w-12 h-auto opacity-80" alt="Logo">
     <span class="font-bold text-sm text-blue-500 sm:text-2xl">BentengDigital</span>
   </a>
-
   <!-- Desktop menu -->
-  <nav id="lg-menu" class="hidden md:flex items-center gap-8 text-gray-100 font-normal mr-5">
+  <nav id="lg-menu" class="hidden md:flex items-center gap-8 text-gray-100 font-normal mr-5 transition-transform-y duration-300">
     <a href="index.html" class="relative overflow-hidden h-6 group">
       <span class="font-semibold block group-hover:-translate-y-full transition-transform duration-300">Home</span>
       <span class="font-semibold block absolute top-full left-0 group-hover:translate-y-[-105%] transition-transform duration-300">Home</span>
@@ -86,10 +84,6 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 </div>
 
 <!-- Pesan Tambahan di Bawah -->
-<section>
-  <div class="text-white text-center px-4 py-10 mt-0 text-xl md:text-2xl font-semibold leading-snug shadow-md bg-black">
-    Kami percaya, keamanan digital dimulai dari
-    <span class="text-blue-600 font-bold block md:inline">kesadaran.</span>
 <section class="bg-black m-0 p-0">
   <div class="flex items-center justify-center text-center px-4 py-10 h-[100px] leading-snug shadow-md">
     <p class="text-white lg:text-2xl md:text-xl sm:text-sm font-semibold m-0">
@@ -102,18 +96,17 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 
 <!-- Content Section -->
 
+<!-- About Us -->
 <!-- <div class="mt-20 justify-center flex">
         <h1 class="text-3xl md:text-4xl font-extrabold text-gray-600 mb-6 leading-tight">ABOUT US</h1>
 </div> -->
-
-<!-- About Us -->
-<section class="bg-gray-100 lg:px-20 lg:py-16 py-12 flex items-center justify-center gap-6">
+<section class="bg-gray-100 lg:px-20 lg:py-16 py-12 flex items-center justify-center gap-6 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
   <!-- Teks -->
   <div class="container lg:mx-auto flex lg:flex-row flex-col-reverse items-center">
     <div class="flex w-full justify-center lg:basis-1/2">
       <div class="text-left lg:text-justify p-6">
         <h1 class="text-3xl md:text-4xl font-semibold mb-4 leading-tight">
-          <span class="text-blue-600 font-bold text-4xl">SafeSpace.ID</span>
+          <span class="text-blue-600 font-bold text-4xl">BentengDigital</span>
           </h1>
           <p class="text-gray-600 mb-6">
             adalah platform edukasi keamanan siber yang membantu masyarakat untuk memahami dan menghadapi ancaman digital.
@@ -135,7 +128,7 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 </section>
 
 <!-- Visi -->
-<section class=" container lg:mx-auto lg:px-20 mx-auto py-12 flex flex-col lg:flex-row items-center justify-center gap-6">
+<section class=" container lg:mx-auto lg:px-20 mx-auto py-12 flex flex-col lg:flex-row items-center justify-center gap-6 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
   <!-- Gambar -->
   <div class="w-full lg:basis-1/2 flex justify-center">
     <img 
@@ -151,23 +144,23 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
         <span class="text-blue-600 font-bold text-4xl">Visi</span>
       </h1>
       <p class="text-gray-600 mb-6">
-       Meningkatkan keahlian keamanan digital di kalangan masyarakat agar mampu melindungi diri dari ancaman siber dan berkontribusi positif dalam ruang digital.
+        Meningkatkan keahlian keamanan digital di kalangan masyarakat agar mampu melindungi diri dari ancaman siber dan berkontribusi positif dalam ruang digital.
       </p>
-       <h1 class="text-3xl md:text-4xl font-semibold mb-4 leading-tight">
+      <h1 class="text-3xl md:text-4xl font-semibold mb-4 leading-tight">
         <span class="text-blue-600 font-bold text-4xl">Misi</span>
       </h1>
       <p class="text-gray-600 mb-2">
         - Menyelenggarakan pelatihan dan edukasi tentang keamanan digital untuk berbagai lapisan masyarakat.
- <p class="text-gray-600 mb-6">
-        - Meningkatkan kesadaran masyarakat akan pentingnya privasi, perlindungan data, dan etika dalam penggunaan teknologi.
- </p>
+<p class="text-gray-600 mb-6">
+      - Meningkatkan kesadaran masyarakat akan pentingnya privasi, perlindungan data, dan etika dalam penggunaan teknologi.
+</p>
       </p>
     </div>
   </div>
 </section>
 
 <!-- Accordion Course -->
-<section class="bg-gray-100 py-10 gap-10 px-6 lg:px-20">
+<section class="bg-gray-100 py-10 gap-10 px-6 lg:px-20 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
   <div class="container flex flex-col lg:flex-row justify-between mx-auto">
     <!-- Bagian Kiri (Accordion) -->
     <div class="space-y-4 lg:w-2/3">
@@ -187,7 +180,7 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
           Keamanan Akun & Password
         </summary>
         <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-         <p>Upaya melindungi akun digital dari akses tidak sah dengan menggunakan kata sandi yang kuat, unik, dan aman, serta menambah lapisan perlindungan melalui autentikasi ganda (2FA).</p>
+          <p>Upaya melindungi akun digital dari akses tidak sah dengan menggunakan kata sandi yang kuat, unik, dan aman, serta menambah lapisan perlindungan melalui autentikasi ganda (2FA).</p>
         </div>
       </details>
 
@@ -223,13 +216,13 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
           Etika dan Keamanan Berinternet untuk Anak & Remaja
         </summary>
         <div class="mt-2 text-gray-600 space-y-1 overflow-hidden transition-all duration-500 ease-in-out group-open:animate-zoomIn">
-         <p>panduan agar anak dan remaja dapat menggunakan internet dengan bijak, menghormati orang lain di dunia maya, serta memahami cara melindungi diri dari konten berbahaya, penipuan, dan perundungan online.</p>
+          <p>panduan agar anak dan remaja dapat menggunakan internet dengan bijak, menghormati orang lain di dunia maya, serta memahami cara melindungi diri dari konten berbahaya, penipuan, dan perundungan online.</p>
         </div>
       </details>
     </div>
 
     <!-- Bagian Kanan (Statistik Kasus Penipuan) -->
-    <div class="hidden lg:flex lg:w-1/3">
+<div class="hidden lg:flex lg:w-1/3">
   <div class="sticky top-[88px] self-start bg-white rounded-2xl shadow-lg p-8 text-center w-full">
     <div class="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent pointer-events-none rounded-2xl"></div>
     <h2 class="text-3xl font-bold text-blue-700 mb-2">Data OJK</h2>
@@ -242,86 +235,9 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
 </section>
 
 
-<!-- Article Section -->
-<section class="bg-white py-16 px-6 lg:px-20" id="article">
-  <div class="text-center mb-12">
-    <h2 class="text-4xl font-extrabold text-gray-600 mb-3">Artikel Keamanan Digital</h2>
-    <p class="text-gray-600 max-w-2xl mx-auto">
-      Pelajari tips dan wawasan terbaru tentang keamanan siber, privasi data, dan etika digital dari berbagai sumber tepercaya.
-    </p>
-  </div>
-
-  <!-- Grid Artikel -->
-  <div class="container flex flex-col lg:flex-row mx-auto">
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-
-      <!-- Artikel 1 -->
-      <article class="bg-gray-50 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        <img src="https://source.unsplash.com/600x400/?cybersecurity,technology" alt="Keamanan Data" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-blue-700 mb-2">Cara Melindungi Data Pribadi di Internet</h3>
-          <p class="text-gray-600 mb-4">
-            Kenali langkah-langkah penting untuk menjaga keamanan informasi pribadi agar tidak disalahgunakan.
-          </p>
-          <a href="https://kominfo.go.id/content/detail/43764/cara-melindungi-data-pribadi-di-internet/0/sorotan_media"
-            target="_blank"
-            class="text-blue-600 font-semibold hover:underline">
-            Baca Selengkapnya →
-          </a>
-        </div>
-      </article>
-
-      <!-- Artikel 2 -->
-      <article class="bg-gray-50 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        <img src="https://source.unsplash.com/600x400/?phishing,computer" alt="Phishing Attack" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-blue-700 mb-2">Waspadai Phishing dan Penipuan Online</h3>
-          <p class="text-gray-600 mb-4">
-            Pelajari cara mengenali email dan website palsu agar tidak tertipu oleh modus phishing.
-          </p>
-          <a href="https://www.ojk.go.id/id/berita-dan-kegiatan/info-terkini/Pages/Waspada-Phishing-dan-Penipuan-Online.aspx"
-            target="_blank"
-            class="text-blue-600 font-semibold hover:underline">
-            Baca Selengkapnya →
-          </a>
-        </div>
-      </article>
-
-      <!-- Artikel 3 -->
-      <article class="bg-gray-50 rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-        <img src="https://source.unsplash.com/600x400/?socialmedia,privacy" alt="Media Sosial Aman" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-blue-700 mb-2">Tips Aman Menggunakan Media Sosial</h3>
-          <p class="text-gray-600 mb-4">
-            Atur privasi dan pelajari kebiasaan aman agar tetap terlindungi di media sosial.
-          </p>
-          <a href="https://digitalent.kominfo.go.id/berita/detail/843/tips-aman-menggunakan-media-sosial"
-            target="_blank"
-            class="text-blue-600 font-semibold hover:underline">
-            Baca Selengkapnya →
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- Cek Data Breach Section -->
-<section id="data-breach" class="bg-gray-100 py-20 px-6 lg:px-20">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-4xl font-extrabold text-blue-700 mb-4">Cek Kebocoran Data Anda</h2>
-    <p class="text-gray-600 mb-8">
-      Masukkan alamat email atau nomor HP Anda untuk memeriksa apakah pernah terlibat dalam kebocoran data publik.
-    </p>
-
-</div>
-</section>
-
 <!-- Footer -->
 <footer class="bg-[#0b1120] text-gray-300 pt-16 pb-10">
-  <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-10">
-
+  <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
     <!-- Kolom 1: Logo & Menu -->
     <div>
       <h2 class="text-2xl font-bold text-gray-100 mb-6">
@@ -343,12 +259,6 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
         <li><a href="/course.html" class="hover:text-blue-400 transition">Waspada Phishing & Penipuan Online</a></li>
         <li><a href="/course.html" class="hover:text-blue-400 transition">Manajemen Data & Privasi Online</a></li>
         <li><a href="/course.html" class="hover:text-blue-400 transition">Kesadaran Siber Lanjutan</a></li>
-      <h3 class="text-xl font-semibold text-gray-100 mb-4">Artikel Terbaru</h3>
-      <ul class="space-y-2 text-sm">
-        <li><a href="#article" class="hover:text-blue-400 transition">Kasus Kebocoran Data Terbaru di Indonesia</a></li>
-        <li><a href="#article" class="hover:text-blue-400 transition">Tren Serangan Siber 2025</a></li>
-        <li><a href="#article" class="hover:text-blue-400 transition">Tips Melindungi Akun dari Phishing</a></li>
-        <li><a href="#article" class="hover:text-blue-400 transition">Kominfo Umumkan Program Edukasi Keamanan Digital</a></li>
       </ul>
     </div>
 
@@ -369,19 +279,15 @@ class="fixed top-0 left-0 w-full z-[100] backdrop-blur-md shadow-md md:px-6 px-4
   </div>
 
   <!-- Garis bawah -->
-  <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+  <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
     © 2025 <span class="text-blue-400 font-semibold">BentengDigital</span> — Mengedukasi & Melindungi Dunia Digital
     <span class="mx-2">|</span>
     <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
-    © 2025 <span class="text-blue-400 font-semibold">SafeSpace.ID</span> — Mengedukasi & Melindungi Masyarakat Digital
-    <!-- <span class="mx-2">|</span> -->
-    <!-- <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a> -->
   </div>
 </footer>
 
 <!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+<!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
   <!-- Navbar Animation -->
   <script src="animation/nav.js"></script>
