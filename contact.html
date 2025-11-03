@@ -11,6 +11,10 @@
   </style>
 </head>
 
+<div id="loading-screen" class="fixed inset-0 bg-white flex items-center justify-center z-[9999] transition-opacity duration-700">
+  <div class="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+</div>
+
 <body class="background bg-[#0b1120]">
   
   <!-- NAVBAR -->
@@ -26,10 +30,6 @@
     <a href="index.html" class="relative overflow-hidden h-6 group">
       <span class="font-semibold block group-hover:-translate-y-full transition-transform duration-300">Home</span>
       <span class="font-semibold block absolute top-full left-0 group-hover:translate-y-[-105%] transition-transform duration-300">Home</span>
-    </a>
-    <a href="index.html" class="relative overflow-hidden h-6 group">
-      <span class="font-semibold block group-hover:-translate-y-full transition-transform duration-300">About us</span>
-      <span class="font-semibold block absolute top-full left-0 group-hover:translate-y-[-105%] transition-transform duration-300">About us</span>
     </a>
     <a href="course.html" class="relative overflow-hidden h-6 group">
       <span class="font-semibold block group-hover:-translate-y-full transition-transform duration-300">Course</span>
@@ -61,7 +61,7 @@
       </svg>
     </button>
 
-    <a href="index.html" class="text-lg font-semibold">About us</a>
+    <a href="index.html" class="text-lg font-semibold">Home</a>
     <a href="course.html" class="text-lg font-semibold">Course</a>
     <a href="contact.html" class="text-lg font-semibold text-blue-600">Contact</a>
   </nav>
@@ -123,45 +123,45 @@
   </div>
 
   <!-- FOOTER -->
-  <footer class="bg-[#0b1120] text-gray-300 pt-16 pb-10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out">
-    <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-10">
-
-      <div>
-        <h2 class="text-2xl font-bold text-gray-100 mb-6">
-            BentengDigital
-        </h2>
-        <ul class="space-y-2">
-          <li><a href="#" class="hover:text-blue-400 transition">Phishing Simulations</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Awareness Training</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Cyber Toolkit</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Portal Login</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Blog</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold text-gray-100 mb-4">Recent Blogs</h3>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:text-blue-400 transition">Kasus Kebocoran Data Terbaru di Indonesia</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Tren Serangan Siber 2025</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Tips Melindungi Akun dari Phishing</a></li>
-          <li><a href="#" class="hover:text-blue-400 transition">Kominfo Umumkan Program Edukasi Keamanan Digital</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h3 class="text-xl font-semibold text-gray-100 mb-4">BentengDigital HQ</h3>
-        <p class="text-sm mb-2">Phone: <span class="text-blue-400 font-medium">+62 811 999 888</span></p>
-        <p class="text-sm mb-6">Alamat: Jl. Teknologi No.21<br>Jakarta, Indonesia 10210</p>
-      </div>
+  <footer class="bg-[#0b1120] text-gray-300 pt-16 pb-10">
+  <div class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-3 gap-10 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-200">
+    <!-- Kolom 1: Logo & Menu -->
+    <div>
+      <h2 class="text-2xl font-bold text-gray-100 mb-6">
+          BentengDigital
+      </h2>
+      <ul class="space-y-2">
+        <li><a href="/index.html" class="hover:text-blue-400 transition">Home</a></li>
+        <li><a href="/course.html" class="hover:text-blue-400 transition">Course</a></li>
+        <li><a href="/contact.html" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
     </div>
 
-    <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
-      © 2025 <span class="text-blue-400 font-semibold">BentengDigital</span> — Mengedukasi & Melindungi Dunia Digital
-      <span class="mx-2">|</span>
-      <a href="#" class="hover:text-blue-400 transition">Privacy Policy</a>
+    <!-- Kolom 2: Recent Blogs -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-100 mb-4">Kursus Terbaru</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/course.html" class="hover:text-blue-400 transition">Dasar Keamanan Digital</a></li>
+        <li><a href="/course.html" class="hover:text-blue-400 transition">Waspada Phishing & Penipuan Online</a></li>
+        <li><a href="/course.html" class="hover:text-blue-400 transition">Manajemen Data & Privasi Online</a></li>
+        <li><a href="/course.html" class="hover:text-blue-400 transition">Kesadaran Siber Lanjutan</a></li>
+      </ul>
     </div>
-  </footer>
+
+    <!-- Kolom 3: Kontak -->
+    <div>
+      <h3 class="text-xl font-semibold text-gray-100 mb-4">BentengDigital HQ</h3>
+      <p class="text-sm mb-2">Phone: <span class="text-blue-400 font-medium">+62 811 999 888</span></p>
+      <p class="text-sm mb-6">Alamat: Jl. Teknologi No.21<br>Kendari, Indonesia 10101</p>
+    </div>
+
+  </div>
+
+  <!-- Garis bawah -->
+  <div class="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500 reveal opacity-0 translate-y-10 transition-all duration-700 ease-out delay-300">
+    © 2025 <span class="text-blue-400 font-semibold">BentengDigital</span> — Mengedukasi & Melindungi Dunia Digital
+  </div>
+</footer>
 
   <script src="animation/nav.js"></script>
 </body>
